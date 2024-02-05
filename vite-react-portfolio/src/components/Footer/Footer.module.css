@@ -1,0 +1,7 @@
+footer {
+    height: 60px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;/*จัดกึ่งกลางแนวนอน*/
+    align-items: center;/*จัดกึ่งกลางแนวตั้ง*/
+}

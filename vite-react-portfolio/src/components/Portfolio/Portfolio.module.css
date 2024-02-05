@@ -1,0 +1,54 @@
+.port_con {
+    overflow: hidden;
+    height: 900px;
+    margin: 0 auto;
+    max-width: 1170px;
+
+    & .port_title {
+        margin-top: 45px;
+        text-align: center;
+        font-size: 32px;
+        font-weight: bold;    
+    }
+    & .port_list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+        
+        & .port_items {
+            margin-top: 60px;
+            
+
+            & p {
+                text-align: center;
+                font-size: 16px;
+                
+            }
+
+            & img {
+                width: 300px;
+                height: 300px;
+                border-radius: 20px;
+                object-fit: cover;
+                cursor: pointer;
+                
+
+            }
+        
+
+        }
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .port_con {
+        height: auto;
+
+        & .port_list {
+            display: grid;
+            grid-template-columns: 1fr;
+            justify-items: center;
+        }
+    }    
+} 

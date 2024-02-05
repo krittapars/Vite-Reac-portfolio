@@ -1,0 +1,84 @@
+.hero_wrapper {
+    height: 500px;
+    overflow: hidden; 
+
+    & container {
+        max-width: 1170px;
+        margin: 0 auto; 
+    }
+
+    & .hero_con {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 110px;
+        margin-left: 47px;
+        
+        
+        & .text_1 {
+            font-size: 32px;
+        }
+
+        & .text_2 {
+            font-size: 64px;
+            font-weight: bold;
+            color: #0085ff;
+        } 
+        & .text_3 {
+            font-size: 32px;
+        }
+        & .text_4 {
+            font-size: 16px;
+            margin-top: 25px;
+        }
+        & .hero_social {
+            display: flex;
+            margin-top: 25px;
+            list-style: none;
+            
+            & li {
+                margin-right: 10px;
+
+                & svg {
+                    width: 32px;
+                    height: 32px;
+                    color: #333;
+                }
+            }             
+        }
+        & .hero_img {
+            width: 300px;
+            height: 300px;
+            border-radius: 100%;            
+            background-image: url(https://scontent.fbkk9-3.fna.fbcdn.net/v/t39.30808-6/328565367_735984681417523_8059942646372884417_n.jpg?stp=cp6_dst-jpg&_nc_cat=105&ccb=1-7&_nc_sid=dd5e9f&_nc_eui2=AeELDxIZ_bDgu-Ek0IpWreWwuP4ipj7gQ8e4_iKmPuBDx5jquZFB_F1ZE5xEEuKC4qR6PeYIL5AmiGQXgrKWz8HF&_nc_ohc=6oJvh4kTWv4AX99sCzQ&_nc_ht=scontent.fbkk9-3.fna&oh=00_AfBfVJbHE1fLHOZcNRVN0UyX_DlyYu9I6N5n8jHhMdzMrw&oe=65C52F68);
+            background-size: cover;
+            background-position: center;
+            margin-right: 120px;
+        }
+
+    }
+
+}
+@media screen and (max-width: 480px) {
+    .hero_wrapper {
+        height: auto;
+        
+
+        & .hero_con {
+            flex-direction: column;
+            padding: 50px 0;
+            padding: 25px;
+            margin-top: 40px;
+
+            & .hero_info, & .hero_img{
+                width: 100%;
+                margin-top: 20px;
+            }
+
+            & .hero_social {
+                margin-left: 150px;
+            }
+
+        }
+
+    }
+}
